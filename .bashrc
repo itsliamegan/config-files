@@ -11,7 +11,7 @@ export TERM=xterm-256color
 # PATH #
 #------#
 
-export PATH=~/.cargo/bin:$PATH
+export PATH=~/.cargo/bin:~/bin:$PATH
 export CDPATH=.:~/Code
 
 #--------#
@@ -33,24 +33,10 @@ formatted_git_branch() {
     changes="*"
   fi
 
-  # echo " ($branch$changes) "
-  # echo "[$branch$changes]"
-  # printf " [\001\033[32m\002$branch$changes\001\033[00m\002] "
-  printf " (\001\033[32m\002$branch$changes\001\033[00m\002) "
+  echo " ($branch$changes) "
 }
 
-# export PS1="\[\033[00m\]\u\[\033[00m\]:\[\033[33m\]\W\[\033[00m\]\$(formatted_git_branch) \[\033[31m\]$\[\033[00m\] "
-# export PS1="\[\033[94m\]\w\[\033[00m\]\$(formatted_git_branch)$ "
-# export PS1="\[\033[32m\]\u@\h: \[\033[34m\]\w\n\[\033[00m\]$ "
-# export PS1="\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[00m\] $ "
-# export PS1="\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[00m\]\$(formatted_git_branch)$ "
-# export PS1="[\[\033[94m\]\w\[\033[00m\]]\$(formatted_git_branch)\[\033[93m\] $ \[\033[00m\]"
-# export PS1="\[\033[35m\][\[\033[32m\]\u\[\033[35m\]] \[\033[33m\]\w\[\033[00m\]\$(formatted_git_branch)$ "
-# export PS1="\[\033[33m\]\w\[\033[00m\]\$(formatted_git_branch)\n\[\033[32m\]$\[\033[00m\] "
-# export PS1="\[\033[32m\][\w] $ \[\033[00m\]"
-# export PS1="\[\033[33m\]\w\[\033[00m\]\$(formatted_git_branch)\n\[\033[00m\]$ "
-# export PS1="[\u] \w \$ "
-export PS1="[\u] \[\033[32m\]\w \[\033[33m\]\$\[\033[00m\] "
+export PS1="[\u] \[\033[32m\]\w \[\033[33m\]$\[\033[00m\] "
 
 #---------#
 # HELPERS #

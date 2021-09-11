@@ -2,5 +2,4 @@
 
 brew bundle
 bundle install
-
 ./symlink_config_files

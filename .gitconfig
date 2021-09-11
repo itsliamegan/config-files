@@ -1,18 +1,15 @@
 [alias]
-  amend = commit --amend
   anoe = commit --amend --no-edit
-  co = checkout
   ci = commit --verbose
-  cm = commit --message
+  co = checkout
   di = diff
   ds = diff --staged
-  lo = log
-  ll = log --oneline
-  ps = push 
+  lo = log --oneline --decorate
+  ps = push
   st = status
 [color "diff"]
-  meta = 11
-  frag = magenta bold
+  meta = brightyellow
+  frag = brightmagenta bold
   commit = yellow bold
   old = red
   new = green
@@ -24,10 +21,15 @@
   newHighlight = green "#003000"
 [core]
   attributesfile = ~/.gitattributes
-  pager = diff-so-fancy | less --tabs=2 -RFX
   excludesfile = ~/.gitignore
+  pager = diff-so-fancy | less --tabs=2 --raw-control-chars --quit-if-one-screen --no-init
+[diff]
+  colorMoved = zebra
+[diff-so-fancy]
+  markEmptyLines = false
+  stripLeadingSymbols = false
 [init]
   defaultBranch = main
 [user]
-  name = Liam Egan
-  email = liam@liamegan.com
+	name = Liam Egan
+	email = liam@liamegan.com

@@ -2,27 +2,22 @@
 cask_args appdir: "~/Applications", require_sha: true
 
 # Install system programs.
-brew "bash"
-brew "chruby"
+brew "asdf"
 brew "curl"
-brew "diff-so-fancy"
-brew "fnm"
 brew "git"
 brew "pandoc"
 brew "postgresql"
 brew "ripgrep"
-brew "ruby-install"
-brew "sqlite"
+brew "sqlite3"
 brew "wget"
-brew "yarn"
 brew "youtube-dl"
 
 # Install GUI programs.
 cask "basictex"
+cask "emacs"
 cask "dash"
-cask "karabiner-elements"
+cask "discord"
 cask "figma"
-cask "firefox"
-cask "iterm2"
+cask "karabiner-elements"
 cask "spotify"
 cask "1password"

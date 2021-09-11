@@ -1,0 +1,8 @@
+/*
+ * Change Ocelot font to something more palatable.
+ */
+#codeEditor > div > div.react-monaco-editor-container > div > div.overflow-guard > div.monaco-scrollable-element.editor-scrollable.vs-dark.mac > div.lines-content.monaco-editor-background > div.view-lines,
+#outputPanel > div > div.scrollbars > div > div:nth-child(12) > div.css-1ljasuy > div,
+.css-1i5ohso * {
+	font-family: Menlo !important;
+}
